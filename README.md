@@ -13,4 +13,5 @@
        - 30 Problems (scale: easy and medium)
 
 ----------------------------------- **Self-Encouragement Notes**------------------------------------
-*02/11/2024: "Progress for Perfection and Consistency for Completion"
+
+02/11/2024: "Progress for Perfection and Consistency for Completion"
