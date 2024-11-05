@@ -15,3 +15,4 @@
 ----------------------------------- **Self-Encouragement Notes**------------------------------------
 
 02/11/2024: "Progress for Perfection and Consistency for Completion"
+05/11/2024: "The grass isn't greener on the other side, its greener only where you water and exercise patience with consistency"
