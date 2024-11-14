@@ -16,6 +16,6 @@
 
 02/11/2024: "Progress for Perfection and Consistency for Completion"
 05/11/2024: "The grass isn't greener on the other side, its greener only where you water and exercise patience with consistency"
-06/11/2024: "Ba bababa , baba baba bababababba baba! 😂"
 07/11/2024: "Bulling like a Matador!!!! Haha!"
 12/11/2024: "TODAY is everyday, so FOCUS"
+14/11/2024: "Walking now, Will be Running pretty sooner"
