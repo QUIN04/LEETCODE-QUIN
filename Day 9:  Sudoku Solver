@@ -25,4 +25,63 @@ ________________________________________________________________________________
 
 #Solution
 
-Didn't get it right
+import java.util.HashSet;
+
+public class Solution {
+    public boolean isValidSudoku(char[][] board) {
+   
+        HashSet<String> seen = new HashSet<>();
+
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                char number = board[i][j];
+                if (number != '.') {
+            
+                    String rowKey = "row" + i + number;
+                    String colKey = "col" + j + number;
+                    String boxKey = "box" + (i / 3) + (j / 3) + number;
+
+                    if (seen.contains(rowKey) || seen.contains(colKey) || seen.contains(boxKey)) {
+                        return false; 
+                    }
+
+                    seen.add(rowKey);
+                    seen.add(colKey);
+                    seen.add(boxKey);
+                }
+            }
+        }
+        return true; 
+    }
+
+    public static void main(String[] args) {
+        Solution validator = new Solution();
+
+        char[][] board1 = {
+            {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
+            {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
+            {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
+            {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
+            {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
+            {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+            {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
+            {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
+            {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
+        };
+
+        char[][] board2 = {
+            {'8', '3', '.', '.', '7', '.', '.', '.', '.'},
+            {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
+            {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
+            {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
+            {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
+            {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+            {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
+            {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
+            {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
+        };
+
+        System.out.println(validator.isValidSudoku(board1)); 
+        System.out.println(validator.isValidSudoku(board2)); 
+    }
+}
