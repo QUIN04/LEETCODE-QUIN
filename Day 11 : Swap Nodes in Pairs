@@ -1,0 +1,133 @@
+#Challenge
+
+Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
+
+ 
+
+Example 1:
+
+Input: head = [1,2,3,4]
+
+Output: [2,1,4,3]
+
+Explanation:
+
+
+
+Example 2:
+
+Input: head = []
+
+Output: []
+
+Example 3:
+
+Input: head = [1]
+
+Output: [1]
+
+Example 4:
+
+Input: head = [1,2,3]
+
+Output: [2,1,3]
+
+Constraints:
+
+The number of nodes in the list is in the range [0, 100].
+0 <= Node.val <= 100
+
+_____________________________________________________________________________________________________________
+
+#Solution
+
+import java.util.Arrays;
+
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int x) {
+        val = x;
+        next = null;
+    }
+
+   
+    public static ListNode deserialize(String data) {
+        if (data.equals("[]")) return null; 
+        
+        String[] values = data.substring(1, data.length() - 1).split(",");
+        return createLinkedList(Arrays.stream(values).mapToInt(Integer::parseInt).toArray());
+    }
+
+    public static ListNode createLinkedList(int[] values) {
+        if (values.length == 0) return null;
+        ListNode head = new ListNode(values[0]);
+        ListNode current = head;
+        for (int i = 1; i < values.length; i++) {
+            current.next = new ListNode(values[i]);
+            current = current.next;
+        }
+        return head;
+    }
+
+    public static void printLinkedList(ListNode head) {
+        ListNode current = head;
+        while (current != null) {
+            System.out.print(current.val + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+}
+
+public class Solution {
+    public ListNode swapPairs(ListNode head) {
+       
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+
+ 
+        ListNode current = dummy;
+
+ 
+        while (current.next != null && current.next.next != null) {
+            ListNode first = current.next; 
+            ListNode second = current.next.next; 
+
+        
+            first.next = second.next;
+            second.next = first; 
+            current.next = second; 
+
+     
+            current = first;
+        }
+
+        
+        return dummy.next;
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+    
+        ListNode head1 = ListNode.deserialize("[1,2,3,4]");
+        ListNode swapped1 = solution.swapPairs(head1);
+        ListNode.printLinkedList(swapped1); 
+
+       
+        ListNode head2 = ListNode.deserialize("[]");
+        ListNode swapped2 = solution.swapPairs(head2);
+        ListNode.printLinkedList(swapped2);
+
+    
+        ListNode head3 = ListNode.deserialize("[1]");
+        ListNode swapped3 = solution.swapPairs(head3);
+        ListNode.printLinkedList(swapped3); 
+
+        ListNode head4 = ListNode.deserialize("[1,2,3]");
+        ListNode swapped4 = solution.swapPairs(head4);
+        ListNode.printLinkedList(swapped4); 
+    }
+}
