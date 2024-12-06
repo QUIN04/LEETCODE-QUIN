@@ -20,4 +20,5 @@
 12/11/2024: "TODAY is everyday, so FOCUS"
 14/11/2024: "Walking now, Will be Running pretty sooner"
 28/11/2024: "I think in pink, cause I don't want to sink" (being poetic in afternoon for no reason )
-05/12/2024: "Daniel Caesar playlist 🎵🎧
+05/12/2024: "Daniel Caesar playlist 🎵🎧"
+06/12/2024: "TGIF 😂"
