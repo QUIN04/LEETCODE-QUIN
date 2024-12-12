@@ -22,3 +22,4 @@
 28/11/2024: "I think in pink, cause I don't want to sink" (being poetic in afternoon for no reason )
 05/12/2024: "Daniel Caesar playlist 🎵🎧"
 06/12/2024: "TGIF 😂"
+12/12/2024: "No pressure"
