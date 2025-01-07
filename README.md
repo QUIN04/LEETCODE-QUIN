@@ -10,7 +10,9 @@
 **Tools**: Leetcode (Of course), Youtube, Gemini and Slack Overflow
 
 **Goal** : *For 2024
-       - 30 Problems (scale: easy and medium)
+       - 30 Problems (scale: easy and medium) (16 done rather)
+           *For 2024
+       - 100 Problems (scale: easy and medium)
 
 ----------------------------------- **Self-Encouragement Notes**------------------------------------
 
