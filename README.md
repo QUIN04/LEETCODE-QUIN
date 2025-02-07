@@ -25,3 +25,5 @@
 05/12/2024: "Daniel Caesar playlist 🎵🎧"
 06/12/2024: "TGIF 😂"
 12/12/2024: "No pressure"
+07/02/2025: "Can't wait to code and design like I need it to survive"
+07/02/2025: "You get more with sugar than with salt"
