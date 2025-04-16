@@ -11,7 +11,7 @@
 
 **Goal** : *For 2024
        - 30 Problems (scale: easy and medium) (16 done rather)
-           *For 2024
+           *For 2025
        - 100 Problems (scale: easy and medium)
 
 ----------------------------------- **Self-Encouragement Notes**------------------------------------
