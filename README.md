@@ -28,3 +28,4 @@
 07/02/2025: "Can't wait to code and design like I need it to survive"
 07/02/2025: "You get more with sugar than with salt"
 16/04/2025: "🦋🎼🎧⌚🌦 'Bout U by Rema [Rema Playlist for this week] "
+23/05/2025: "🎧🎧🎧 Charlie Puth playlist"
